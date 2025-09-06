@@ -1,0 +1,161 @@
+:root {
+  --primary: #09162d;
+  --secondary: #76777a;
+  --dark: #2e353e;
+  --light: #f7f7f7;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  padding: 0.5rem 1rem !important;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+  color: white;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary);
+  margin-top: 15px;
+}
+
+.section-title.text-center:after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-box {
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin-bottom: 2rem;
+}
+
+.service-box:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  background-color: var(--light);
+  padding: 5rem 0;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--dark);
+  color: #aaa;
+  padding: 5rem 0 2rem;
+}
+
+footer h5 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #444;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 5px;
+}
+
+.social-icons a:hover {
+  background: var(--primary);
+}
+
+.bg-secondary-light {
+  background-color: rgba(118, 119, 122, 0.1);
+}
