@@ -44,13 +44,15 @@ h6 {
   transition: all 0.3s;
 }
 
-.navbar-brand img {
-  height: 50px;
-}
-
 .navbar-nav .nav-link {
   font-weight: 600;
   padding: 0.5rem 1rem !important;
+}
+
+.logo-header {
+  border-radius: 7.5px;
+  width: 150px;
+  height: auto;
 }
 
 .hero {
