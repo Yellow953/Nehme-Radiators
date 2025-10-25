@@ -51,7 +51,7 @@ h6 {
 
 .logo-header {
   border-radius: 7.5px;
-  width: 150px;
+  width: 175px;
   height: auto;
 }
 
@@ -60,7 +60,7 @@ h6 {
     url("../images/2.jpg");
   background-size: cover;
   background-position: center;
-  padding: 10rem 0;
+  padding: 7rem 0;
   color: white;
 }
 
@@ -160,4 +160,94 @@ footer a:hover {
 
 .bg-secondary-light {
   background-color: rgba(118, 119, 122, 0.1);
+}
+
+.product-image {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Educational Section Styles */
+.educational-section {
+  background-color: var(--light);
+  padding: 5rem 0;
+}
+
+.fact-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.fact-box:hover {
+  transform: translateY(-5px);
+}
+
+.fact-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.fact-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Offers Section Styles */
+.offers-section {
+  padding: 5rem 0;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+}
+
+.offer-header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.offer-body {
+  padding: 2rem;
+}
+
+.offer-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
