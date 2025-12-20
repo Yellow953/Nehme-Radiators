@@ -251,3 +251,34 @@ footer a:hover {
   font-size: 0.8rem;
   font-weight: bold;
 }
+
+/* Shop Now Button Styles */
+.btn-shop-now {
+  background-color: var(--primary);
+  color: white !important;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-shop-now:hover {
+  background-color: var(--dark);
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.btn-shop-now:active {
+  transform: translateY(0);
+}
+
+.btn-shop-now i {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
