@@ -1,0 +1,3 @@
+I want to convert this static html website to a react website. 
+
+I want to add an admin panel to it that will manage products, orders, clients ... This should connect to firebase firestore and storages as backend.
