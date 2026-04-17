@@ -49,50 +49,49 @@ export default function Products() {
           <div className="text-center py-5">
             <div className="spinner-border text-primary" role="status" />
           </div>
+        ) : products.length === 0 ? (
+          <p className="text-center text-muted">No products available yet.</p>
         ) : (
           <>
             {categories.map((cat) => {
               const catProducts = products.filter((p) => p.category === cat);
               if (catProducts.length === 0) return null;
-              return (
-                <div key={cat} id={cat}>
-                  <div className="row">
-                    {catProducts.map((product) => (
-                      <div className="col-md-4 mb-4" key={product.id}>
-                        <div className="card h-100">
-                          <img
-                            src={product.imageUrl || "/logo1.png"}
-                            className="card-img-top product-image"
-                            alt={product.name}
-                          />
-                          <div className="card-body">
-                            <h5 className="card-title">{product.name}</h5>
-                            {product.price && (
-                              <p className="fw-bold text-primary mb-1">
-                                ${product.price}
-                              </p>
-                            )}
-                            <p className="card-text">{product.description}</p>
-                            <a
-                              href={waLink(product.name)}
-                              className="btn-shop-now"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <i className="fab fa-whatsapp"></i>Shop Now
-                            </a>
-                          </div>
+              return <div key={cat} id={cat} />;
+            })}
+            <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+              {categories.flatMap((cat) =>
+                products
+                  .filter((p) => p.category === cat)
+                  .map((product) => (
+                    <div className="col" key={product.id}>
+                      <div className="card h-100">
+                        <img
+                          src={product.imageUrl || "/logo1.png"}
+                          className="card-img-top product-image"
+                          alt={product.name}
+                        />
+                        <div className="card-body d-flex flex-column">
+                          <h5 className="card-title">{product.name}</h5>
+                          {product.price && (
+                            <p className="fw-bold text-primary mb-1">
+                              ${product.price}
+                            </p>
+                          )}
+                          <p className="card-text flex-grow-1">{product.description}</p>
+                          <a
+                            href={waLink(product.name)}
+                            className="btn-shop-now mt-2"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <i className="fab fa-whatsapp"></i>Shop Now
+                          </a>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-
-            {products.length === 0 && (
-              <p className="text-center text-muted">No products available yet.</p>
-            )}
+                    </div>
+                  ))
+              )}
+            </div>
           </>
         )}
       </div>
