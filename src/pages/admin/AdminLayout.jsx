@@ -62,10 +62,10 @@ export default function AdminLayout() {
           </div>
           <button
             className="sidebar-toggle"
-            onClick={() => setCollapsed((c) => !c)}
-            title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+            onClick={() => mobileOpen ? setMobileOpen(false) : setCollapsed((c) => !c)}
+            title={mobileOpen ? "Close sidebar" : collapsed ? "Expand sidebar" : "Collapse sidebar"}
           >
-            <i className={`fas ${collapsed ? "fa-angles-right" : "fa-angles-left"}`}></i>
+            <i className={`fas ${mobileOpen ? "fa-times" : collapsed ? "fa-angles-right" : "fa-angles-left"}`}></i>
           </button>
         </div>
 
